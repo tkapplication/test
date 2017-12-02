@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_athkar.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_athkar.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_thiker4.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_thiker4.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_set_am.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_set_am.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_thiker6.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_thiker6.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_thiker3.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_thiker3.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_set_pm.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_set_pm.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_getup.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_getup.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main_activity2.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_main_activity2.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_thiker5.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_thiker5.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_thiker2.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_thiker2.xml"
+    }
+]

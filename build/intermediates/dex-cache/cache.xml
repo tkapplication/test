@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\73b69db1e0de26dae43c0517962b8ae5b5e8efc6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_061639820fc12bd4199cc831043294c7571e04ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\3a299813059b143edca1e3692c26144132d2975a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d151a8d13d005a7ed28ac52b6630689bee877395\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\cbff9598f06af56448db918355993357b1728bae\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0f59abddc2f48683caff6a5f6aecad5ba8c9a15a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\ef97b3cfb74cda94f923c24d65e8daedb8af46fc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dee40b4a01bb48be9ce0df9b5d17129ba41ccc47">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2641458d01f82731e90f425e0a7977a633f5e2fb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\de63feec98a7a9bb0849740d1b1f15efaf0f01ee\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c719356c01902eaf6b1a876d6b0551b4ad990e73\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\02a0948b15c25a585008e23d6efc4952f81d68df\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4de562b8d9b2d8f7f83510074e10b27e3fafec71\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\Desktop\Test\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_616b62de7bc35bfa4be35d1e754499c0ede398e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\e7146468425173104ac2970183d55a60c0bd2291\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fac8a2da1b2248b9345657618c3eee92f9d7853e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\3d80edac359b3cda25161ff099bcad3f6a02fb2e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5a915b81ccabe1e634091a8728c71a7e9f8105fb">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3100664ae60d0b6218dd07535bc3a54b32d366dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\71f758720d13d7b23f5774e1758b3487edfd542a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5a8501452ba29a962fae04e2a53c9973e9bb6179\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\93451691894f4de796060fd7d0ec20eb766c098e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_df7b99f7b00405926af528bc68161da4324c2738\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\c061b01525d90dcd74d90ee8b01895d0939b1892\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="34c23b5894b4f24d566bfc33e0e25462c6436b78">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e7da8201cdad25b0670a13e1e935b2578862eda1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\Desktop\Test\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="27afa31cbe389a782f170cc7d9e30d2c92116f43">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_8f7d55a6fb8a5f262881c36cb72585cd2d95c536\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\3baf89e624b33d95909b98eef10df73a454c6312\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b12397bc9f342b29d9e9108978828f99a6da579">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c91bd4912bd98be3a557319e9a126565ed7cd952\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\162c9c30c9403993de58adfc30c59f4cc56de6a2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4172915098ff757c15d41c600f40d36df497c99a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\67989c16f9a271fb48c7855dab336e7e37c6c036\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_81381db273f89e2a3882f0bcbb9a144b168c7e14\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\dfcf8af3f6540968c88e1cd8800bdb7d18d427be\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec4334c3002a5817e0841377c94f2384e2eb3e12\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\Desktop\Test\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_616b62de7bc35bfa4be35d1e754499c0ede398e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\73a301c8c6bbb86c543fc00f59098723c781025d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f890dd2539b7f2582f450f0721e2dea6ae510c">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2ec0b9bb12b14259002f03850c3dc59e4c43775c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\a3ed5051a62cf896a4ac34d79a99d9c2f87929bd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="416fb9ee2fd6e7af0bba04b01d90cb475b1e2074">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_59ed9acdcfa036d8c1af57934dd3465924118451\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\1830ec46727bbb75e293ad242e1b1efe7a80f191\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2c73e2a93e00abd240e495c1e62217e53904a3f3">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_febba466303ad39407812dd5170e45d2581eedaf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\.android\build-cache\09c4b3ed3915e43256a5dfa12f610b5a60417305\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2cb88e7e28736d44e7e643deb80c9af1c3662c8">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9e214590a4a2604efb679de18ad5885d3fad3de4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\khalid\Desktop\Test\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="25a5da28ce9da738f37d3bba3fd4fdf6929e9c34">
+        <dex dex="C:\Users\khalid\Desktop\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_8f7d55a6fb8a5f262881c36cb72585cd2d95c536\classes.dex" />
+    </item>
+
+</items>

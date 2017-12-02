@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            
+            android:id="@+id/home"
+            android:title="الرئيسية" />
+        <item
+            android:id="@+id/athkar"
+            android:title="أذكار المسلم" />
+        <item
+            android:id="@+id/add_thiker"
+            android:title="إضافة ذكر" />
+        <item
+            android:id="@+id/saved_thiker"
+            android:title="الاذكار المحفوظة" />
+        <item
+            android:id="@+id/settings"
+            android:title="الإعدادات" />
+        <item
+            android:id="@+id/share"
+            android:title="صدقة جارية" />
+        <item
+            android:id="@+id/rate"
+            android:title="قيم التطبيق" />
+    </group>
+
+
+
+</menu>

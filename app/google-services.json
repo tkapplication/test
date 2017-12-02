@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "851288724783",
+    "firebase_url": "https://thiker-30e1a.firebaseio.com",
+    "project_id": "thiker-30e1a",
+    "storage_bucket": "thiker-30e1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851288724783:android:ff9b8d503b842ca3",
+        "android_client_info": {
+          "package_name": "com.tkapps.thiker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851288724783-1b6dm25p99cl58o136rm0ue5jbue7gcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGrleNK4DKTwUQAs4yFltG3_Kx4N9e_9k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
