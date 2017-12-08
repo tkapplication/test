@@ -98,6 +98,19 @@ public class DataBase extends SQLiteOpenHelper {
         return false;
     }
 
+    public boolean checkTypes() {
+        SQLiteDatabase database = this.getReadableDatabase();
+
+        Cursor mCursor = database.rawQuery("SELECT * FROM " + saved_Athkar
+                , null);
+        if (mCursor != null) {
+            if (mCursor.getCount() > 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void addType(String id, String name, String image) {
         SQLiteDatabase database = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -220,7 +233,7 @@ public class DataBase extends SQLiteOpenHelper {
     public List<ThikerModel> getThiker(String type) {
         List<ThikerModel> contactList = new ArrayList<>();
         // Select All Query
-        String selectQuery = "SELECT * FROM " + Athkar+" WHERE type=?";
+        String selectQuery = "SELECT * FROM " + Athkar + " WHERE type=?";
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, new String[]{type});
