@@ -1,4 +1,4 @@
-#Fri Dec 01 22:34:12 EET 2017
+#Sat Dec 09 14:34:55 EET 2017
 base.0=C\:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_616b62de7bc35bfa4be35d1e754499c0ede398e5
 renamed.1=classes2.dex
 renamed.0=classes.dex

@@ -16,28 +16,28 @@
         "source": "C:\\Users\\khalid\\.android\\build-cache\\3e41e869eb00b3117cd0aa9664daf6cba93869b1\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\khalid\\.android\\build-cache\\3e41e869eb00b3117cd0aa9664daf6cba93869b1\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\settings.xml",
         "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\layout\\settings.xml"
     },
     {
-        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\khalid\\.android\\build-cache\\3e41e869eb00b3117cd0aa9664daf6cba93869b1\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\khalid\\.android\\build-cache\\3e41e869eb00b3117cd0aa9664daf6cba93869b1\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\khalid\\.android\\build-cache\\3e41e869eb00b3117cd0aa9664daf6cba93869b1\\output\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
         "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\khalid\\.android\\build-cache\\3e41e869eb00b3117cd0aa9664daf6cba93869b1\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",

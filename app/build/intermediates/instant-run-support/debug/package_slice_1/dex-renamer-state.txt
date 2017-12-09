@@ -1,4 +1,4 @@
-#Fri Dec 01 21:44:28 EET 2017
+#Sat Dec 09 14:42:00 EET 2017
 base.0=C\:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1
 renamed.0=classes.dex
 file.0=C\:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1\\classes.dex

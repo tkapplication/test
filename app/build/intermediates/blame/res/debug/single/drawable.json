@@ -12,6 +12,10 @@
         "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\spinner_shape.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\drawable\\spinner_shape.xml"
+    },
+    {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\m7.jpg",
         "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\drawable\\m7.jpg"
     },

@@ -101,7 +101,7 @@ public class DataBase extends SQLiteOpenHelper {
     public boolean checkTypes() {
         SQLiteDatabase database = this.getReadableDatabase();
 
-        Cursor mCursor = database.rawQuery("SELECT * FROM " + saved_Athkar
+        Cursor mCursor = database.rawQuery("SELECT * FROM " + types
                 , null);
         if (mCursor != null) {
             if (mCursor.getCount() > 0) {

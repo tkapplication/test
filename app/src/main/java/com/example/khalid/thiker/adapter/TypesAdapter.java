@@ -22,9 +22,9 @@ import java.util.ArrayList;
  */
 
 public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.ViewHolder> {
-    private Context context;
     ArrayList<Types> list;
     DataBase dataBase;
+    private Context context;
 
     public TypesAdapter(Context context, ArrayList<Types> list) {
         this.list = list;
@@ -67,8 +67,9 @@ public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.ViewHolder> 
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context, ThikerPage.class);
-                    intent.putExtra("type", list.get(getAdapterPosition()).getName());
+                    intent.putExtra("id", list.get(getAdapterPosition()).getId());
                     intent.putExtra("color", list.get(getAdapterPosition()).getImage());
+                    intent.putExtra("name", list.get(getAdapterPosition()).getName());
 
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);

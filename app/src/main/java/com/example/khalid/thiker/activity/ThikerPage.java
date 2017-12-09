@@ -32,7 +32,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
 public class ThikerPage extends AppCompatActivity {
-    String type = "", image = "1";
+    String type = "", image = "1", name = "";
     ArrayList<ThikerModel> thikerModels;
     RecyclerView recyclerView;
     TextView textView;
@@ -50,11 +50,13 @@ public class ThikerPage extends AppCompatActivity {
         setContentView(R.layout.activity_thiker);
         recyclerView = (RecyclerView) findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
-        type = getIntent().getExtras().getString("type");
+        type = getIntent().getExtras().getString("id");
         thikerModels = new ArrayList<>();
         textView = (TextView) findViewById(R.id.header);
-        textView.setText(type);
         image = getIntent().getExtras().getString("color");
+        name = getIntent().getExtras().getString("name");
+        textView.setText(name);
+
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         dataBase = new DataBase(getApplicationContext());
         textView.setBackgroundColor(Color.parseColor(image));
