@@ -96,8 +96,16 @@
         "source": "C:\\Users\\khalid\\.android\\build-cache\\3e41e869eb00b3117cd0aa9664daf6cba93869b1\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\added_fragment.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\layout\\added_fragment.xml"
+    },
+    {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "C:\\Users\\khalid\\.android\\build-cache\\3e41e869eb00b3117cd0aa9664daf6cba93869b1\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_item.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\layout\\user_item.xml"
     },
     {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
@@ -238,6 +246,10 @@
     {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\saved_thiker.xml",
         "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\layout\\saved_thiker.xml"
+    },
+    {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\layout\\test.xml"
     },
     {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",

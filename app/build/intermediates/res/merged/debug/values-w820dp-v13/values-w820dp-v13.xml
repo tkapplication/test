@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorAccent">#d0ae89</color>
-    <color name="colorPrimary">#d0ae89</color>
-    <color name="colorPrimaryDark">#c7a27a</color>
-    <dimen name="activity_horizontal_margin">64dp</dimen>
-</resources>

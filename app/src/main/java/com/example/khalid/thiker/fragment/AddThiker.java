@@ -55,13 +55,13 @@ public class AddThiker extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.add_thiker, container, false);
         toolbar.setTitle("إضافة ذكر");
-        spinner = (Spinner) view.findViewById(R.id.spinner);
+        spinner = view.findViewById(R.id.spinner);
         dataBase = new DataBase(getActivity());
         types = new ArrayList<>();
         strings = new ArrayList<>();
-        counter = (EditText) view.findViewById(R.id.count);
-        thiker = (EditText) view.findViewById(R.id.edit);
-        save = (Button) view.findViewById(R.id.save);
+        counter = view.findViewById(R.id.count);
+        thiker = view.findViewById(R.id.edit);
+        save = view.findViewById(R.id.save);
         if (dataBase.checkTypes()) {
             types = (ArrayList<Types>) dataBase.getTypes();
             for (Types type : types) {
@@ -86,7 +86,7 @@ public class AddThiker extends Fragment {
                     Toast.makeText(getActivity(), "يرجى ملئ حقل التكرار ", Toast.LENGTH_SHORT).show();
 
                 else {
-                    dataBase.addThikerPage(uniqueID, thiker.getText().toString(), counter.getText().toString(), type, "");
+                    dataBase.addUserThiker(uniqueID, thiker.getText().toString(), counter.getText().toString(), type, "");
                     Toast.makeText(getActivity(), "تم اضافة الذكر بنجاح ", Toast.LENGTH_SHORT).show();
 
                 }
@@ -95,7 +95,7 @@ public class AddThiker extends Fragment {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                type = strings.get(position);
+                type = types.get(position).getId();
 
             }
 

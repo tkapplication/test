@@ -29,7 +29,6 @@ public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.ViewHolder> 
     public TypesAdapter(Context context, ArrayList<Types> list) {
         this.list = list;
         this.context = context;
-       // Collections.reverse(list);
         dataBase = new DataBase(context);
 
     }
@@ -61,8 +60,8 @@ public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.ViewHolder> 
         public ViewHolder(View view) {
 
             super(view);
-            textView = (TextView) view.findViewById(R.id.name);
-            linearLayout = (LinearLayout) view.findViewById(R.id.linear);
+            textView = view.findViewById(R.id.name);
+            linearLayout = view.findViewById(R.id.linear);
             linearLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

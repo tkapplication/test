@@ -24,6 +24,7 @@ public class DataBase extends SQLiteOpenHelper {
     String home_athkar = "home_athkar";
     String wall = "wall";
     String types = "types";
+    String offline_athkar = "offline_athkar";
 
     public DataBase(Context context) {
         super(context, "thiker", null, 1);
@@ -37,12 +38,14 @@ public class DataBase extends SQLiteOpenHelper {
         String sql4 = "CREATE TABLE " + home_athkar + " (id TEXT PRIMARY KEY,text TEXT,token TEXT)";
         String sql5 = "CREATE TABLE " + wall + " (id TEXT PRIMARY KEY,text TEXT,token TEXT)";
         String sql6 = "CREATE TABLE " + types + " (id TEXT PRIMARY KEY,name TEXT,image TEXT)";
+        String sql7 = "CREATE TABLE " + offline_athkar + " (id TEXT PRIMARY KEY,text TEXT,count TEXT,type TEXT,fadel TEXT)";
 
         db.execSQL(sql2);
         db.execSQL(sql1);
         db.execSQL(sql3);
         db.execSQL(sql5);
         db.execSQL(sql6);
+        db.execSQL(sql7);
 
     }
 
@@ -63,6 +66,39 @@ public class DataBase extends SQLiteOpenHelper {
 
 
         database.insert(Athkar, null, values);
+
+    }
+
+    public void addUserThiker(String id, String text, String count, String type, String fadel) {
+        SQLiteDatabase database = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("id", id);
+        values.put("text", text);
+        values.put("count", count);
+        values.put("type", type);
+        values.put("fadel", fadel);
+
+
+        database.insert(offline_athkar, null, values);
+
+    }
+
+    public void deleteUserThiker(String id) {
+        SQLiteDatabase database = this.getWritableDatabase();
+
+        database.delete(offline_athkar, "id=?", new String[]{id});
+
+    }
+
+    public void updateUserThiker(String text, String count, String id) {
+        SQLiteDatabase database = this.getWritableDatabase();
+
+        ContentValues cv = new ContentValues();
+        cv.put("text", text); //These Fields should be your String values of actual column names
+        cv.put("count", count);
+
+        database.update(offline_athkar, cv, "id = ?", new String[]{id});
+
 
     }
 
@@ -237,6 +273,58 @@ public class DataBase extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, new String[]{type});
+
+        // looping through all rows and adding to selectedMenuItems
+        if (cursor.moveToFirst()) {
+            do {
+                ThikerModel thiker = new ThikerModel();
+                thiker.setId(cursor.getString(cursor.getColumnIndex("id")));
+                thiker.setText(cursor.getString(cursor.getColumnIndex("text")));
+                thiker.setCount(cursor.getString(cursor.getColumnIndex("count")));
+                thiker.setType(cursor.getString(cursor.getColumnIndex("type")));
+                thiker.setFadel(cursor.getString(cursor.getColumnIndex("fadel")));
+
+                contactList.add(thiker);
+            } while (cursor.moveToNext());
+        }
+
+        // return contact selectedMenuItems
+        return contactList;
+    }
+
+    public List<ThikerModel> getOfflineThiker(String type) {
+        List<ThikerModel> contactList = new ArrayList<>();
+        // Select All Query
+        String selectQuery = "SELECT * FROM " + offline_athkar + " WHERE type=?";
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, new String[]{type});
+
+        // looping through all rows and adding to selectedMenuItems
+        if (cursor.moveToFirst()) {
+            do {
+                ThikerModel thiker = new ThikerModel();
+                thiker.setId(cursor.getString(cursor.getColumnIndex("id")));
+                thiker.setText(cursor.getString(cursor.getColumnIndex("text")));
+                thiker.setCount(cursor.getString(cursor.getColumnIndex("count")));
+                thiker.setType(cursor.getString(cursor.getColumnIndex("type")));
+                thiker.setFadel(cursor.getString(cursor.getColumnIndex("fadel")));
+
+                contactList.add(thiker);
+            } while (cursor.moveToNext());
+        }
+
+        // return contact selectedMenuItems
+        return contactList;
+    }
+
+    public List<ThikerModel> getAllOfflineThiker() {
+        List<ThikerModel> contactList = new ArrayList<>();
+        // Select All Query
+        String selectQuery = "SELECT * FROM " + offline_athkar;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
 
         // looping through all rows and adding to selectedMenuItems
         if (cursor.moveToFirst()) {

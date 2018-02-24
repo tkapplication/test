@@ -1,4 +1,4 @@
-#Sat Dec 09 14:34:54 EET 2017
-base.0=C\:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2
+#Sat Feb 24 23:41:02 EET 2018
+base.0=C\:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+path.0=classes.dex
 renamed.0=classes.dex
-file.0=C\:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2\\classes.dex

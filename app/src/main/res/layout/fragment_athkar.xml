@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,4 +17,28 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:progressDrawable="@drawable/circular" />
+
+    <LinearLayout
+        android:id="@+id/noconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="لا يوجد اتصال بالانترنت" />
+
+        <ImageView
+            android:id="@+id/retry"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_retry" />
+    </LinearLayout>
 </RelativeLayout>

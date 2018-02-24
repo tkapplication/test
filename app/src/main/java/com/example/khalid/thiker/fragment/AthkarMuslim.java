@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -34,27 +36,33 @@ public class AthkarMuslim extends Fragment {
     ArrayList<Types> types;
     ProgressBar progressBar;
     DataBase dataBase;
+    LinearLayout noConnection;
+    ImageView retry;
 
     public static AthkarMuslim newInstance() {
         AthkarMuslim fragment = new AthkarMuslim();
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_athkar, container, false);
-        recyclerView = (RecyclerView) view.findViewById(R.id.recycler);
+        recyclerView = view.findViewById(R.id.recycler);
+        retry = view.findViewById(R.id.retry);
+        noConnection = view.findViewById(R.id.noconnect);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
         dataBase = new DataBase(getActivity());
+        types = (ArrayList<Types>) dataBase.getTypes();
+
         toolbar.setTitle(" أذكار المسلم");
-        types = new ArrayList<>();
-        progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
+        progressBar = view.findViewById(R.id.progressBar);
+        if (!Utils.isNetworkConnected(getActivity()) && types.size() == 0) {
+            noConnection.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.GONE);
+
+        }
         if (Utils.isNetworkConnected(getActivity())) {
             getTypes();
         } else {
@@ -62,10 +70,24 @@ public class AthkarMuslim extends Fragment {
             types = (ArrayList<Types>) dataBase.getTypes();
             recyclerView.setAdapter(new TypesAdapter(getActivity(), types));
         }
+
+        retry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (Utils.isNetworkConnected(getActivity())) {
+                    getTypes();
+                    noConnection.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+
+                }
+            }
+        });
+
         return view;
     }
 
     public void getTypes() {
+        types = new ArrayList<>();
         String url = "http://ro7.xyz/gettypes.php";
 
         StringRequest stringRequest2 = new StringRequest(Request.Method.GET, url,

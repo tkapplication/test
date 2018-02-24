@@ -24,6 +24,10 @@
         "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_thiker6.xml"
     },
     {
+        "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_menu.xml",
+        "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\action_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\khalid\\Desktop\\Test\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_thiker3.xml",
         "source": "C:\\Users\\khalid\\Desktop\\Test\\app\\src\\main\\res\\menu\\menu_thiker3.xml"
     },

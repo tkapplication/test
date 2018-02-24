@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -33,11 +35,13 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class ThikerPage extends AppCompatActivity {
     String type = "", image = "1", name = "";
-    ArrayList<ThikerModel> thikerModels;
+    ArrayList<ThikerModel> thikerModels, offline;
     RecyclerView recyclerView;
     TextView textView;
     ProgressBar progressBar;
     DataBase dataBase;
+    LinearLayout noConnection;
+    ImageView retry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,29 +52,54 @@ public class ThikerPage extends AppCompatActivity {
                 .build()
         );
         setContentView(R.layout.activity_thiker);
+        retry = (ImageView) findViewById(R.id.retry);
+        noConnection = (LinearLayout) findViewById(R.id.noconnect);
         recyclerView = (RecyclerView) findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
         type = getIntent().getExtras().getString("id");
         thikerModels = new ArrayList<>();
+        offline = new ArrayList<>();
+        dataBase = new DataBase(getApplicationContext());
+        thikerModels = (ArrayList<ThikerModel>) dataBase.getThiker(type);
+
         textView = (TextView) findViewById(R.id.header);
         image = getIntent().getExtras().getString("color");
         name = getIntent().getExtras().getString("name");
         textView.setText(name);
-
+        offline = (ArrayList<ThikerModel>) dataBase.getOfflineThiker(type);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        dataBase = new DataBase(getApplicationContext());
         textView.setBackgroundColor(Color.parseColor(image));
-        if (Utils.isNetworkConnected(getApplicationContext()))
+
+        if (!Utils.isNetworkConnected(getApplicationContext()) && thikerModels.size() == 0) {
+            noConnection.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.GONE);
+
+        } else if (Utils.isNetworkConnected(getApplicationContext()))
             getThiker(type);
 
-        else{
+        else {
             progressBar.setVisibility(View.GONE);
             thikerModels = (ArrayList<ThikerModel>) dataBase.getThiker(type);
+            thikerModels.addAll(offline);
+
             recyclerView.setAdapter(new ThikerAdapter(getApplicationContext(), thikerModels));
+
         }
+        retry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (Utils.isNetworkConnected(getApplicationContext())) {
+                    getThiker(type);
+                    noConnection.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+
+                }
+            }
+        });
     }
 
     public void getThiker(String type) {
+        thikerModels = new ArrayList<>();
         type = type.replaceAll("\\s", "%20");
         String url = "http://ro7.xyz/getthiker.php?type=" + type;
 
@@ -92,6 +121,8 @@ public class ThikerPage extends AppCompatActivity {
                                 thikerModels.add(new ThikerModel(id, text, count, type, fadel));
                                 dataBase.addThikerPage(id, text, count, type, fadel);
                             }
+                            thikerModels.addAll(offline);
+
                             recyclerView.setAdapter(new ThikerAdapter(getApplicationContext(), thikerModels));
                             progressBar.setVisibility(View.GONE);
                         } catch (JSONException e) {

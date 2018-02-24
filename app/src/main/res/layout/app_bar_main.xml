@@ -8,27 +8,27 @@
     tools:context="com.example.khalid.thiker.activity.MainActivity">
 
     <android.support.design.widget.AppBarLayout
-        android:layoutDirection="rtl"
-        android:gravity="right"
-
-        android:layout_gravity="right"
+        android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layoutDirection="rtl"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
 
-            android:background="#d0ae89"
-            android:layoutDirection="rtl"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:background="#d0ae89"
+            android:layoutDirection="rtl"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
 
+    <include layout="@layout/content_main" />
 
 
 </android.support.design.widget.CoordinatorLayout>

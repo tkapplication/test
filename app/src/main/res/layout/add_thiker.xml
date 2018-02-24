@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/_15sdp"
-        android:text="أختر تصنيف الذكر"
+        android:text="اختر تصنيف الذكر"
         android:textSize="@dimen/_14sdp" />
 
     <LinearLayout

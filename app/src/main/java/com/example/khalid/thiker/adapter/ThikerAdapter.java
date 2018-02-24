@@ -20,17 +20,16 @@ import java.util.Collections;
  */
 
 public class ThikerAdapter extends RecyclerView.Adapter<ThikerAdapter.ViewHolder> {
-    private Context context;
     ArrayList<ThikerModel> list;
     DataBase dataBase;
     int c;
+    private Context context;
 
     public ThikerAdapter(Context context, ArrayList<ThikerModel> list) {
         this.list = list;
         this.context = context;
         Collections.reverse(list);
         dataBase = new DataBase(context);
-
     }
 
     @Override
@@ -42,13 +41,12 @@ public class ThikerAdapter extends RecyclerView.Adapter<ThikerAdapter.ViewHolder
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
 
-        if (!list.get(position).getFadel().equals(""))
+        if (!list.get(position).getFadel().equals(null))
             holder.fadel.setText(list.get(position).getFadel());
 
         holder.name.setText(list.get(position).getText());
         holder.count.setText(list.get(position).getCount());
-//        if (!holder.count.getText().toString().equals(""))
-//            c = Integer.parseInt(list.get(position).getCount());
+
     }
 
 
@@ -64,10 +62,10 @@ public class ThikerAdapter extends RecyclerView.Adapter<ThikerAdapter.ViewHolder
         public ViewHolder(View view) {
             super(view);
 
-            name = (TextView) view.findViewById(R.id.text);
-            count = (TextView) view.findViewById(R.id.count);
-            fadel = (TextView) view.findViewById(R.id.fadel);
-            cardView = (CardView) view.findViewById(R.id.card_view);
+            name = view.findViewById(R.id.text);
+            count = view.findViewById(R.id.count);
+            fadel = view.findViewById(R.id.fadel);
+            cardView = view.findViewById(R.id.card_view);
 
 
             cardView.setOnClickListener(new View.OnClickListener() {

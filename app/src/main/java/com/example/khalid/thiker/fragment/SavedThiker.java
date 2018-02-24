@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.khalid.thiker.R;
 import com.example.khalid.thiker.adapter.HomeAdapter;
@@ -25,6 +26,7 @@ public class SavedThiker extends Fragment {
     RecyclerView recyclerView;
     ArrayList<Wall> arrayList;
     DataBase dataBase;
+    TextView nothiker;
 
     public static SavedThiker newInstance() {
         SavedThiker fragment = new SavedThiker();
@@ -40,13 +42,16 @@ public class SavedThiker extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.saved_thiker, container, false);
-        recyclerView = (RecyclerView) view.findViewById(R.id.recycler);
+        nothiker = view.findViewById(R.id.nothiker);
+        recyclerView = view.findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
         arrayList = new ArrayList<>();
         dataBase = new DataBase(getActivity());
-        arrayList= (ArrayList<Wall>) dataBase.getSavedAthkar();
-        recyclerView.setAdapter(new HomeAdapter(getActivity(),arrayList,"saved"));
+        arrayList = (ArrayList<Wall>) dataBase.getSavedAthkar();
+        recyclerView.setAdapter(new HomeAdapter(getActivity(), arrayList, "saved"));
         toolbar.setTitle("الأذكار المحفوظة");
+        if (arrayList.size() == 0)
+            nothiker.setVisibility(View.VISIBLE);
 
         return view;
     }

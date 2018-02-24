@@ -16,6 +16,9 @@
             android:id="@+id/saved_thiker"
             android:title="الاذكار المحفوظة" />
         <item
+            android:id="@+id/added_thiker"
+            android:title="الاذكار المضافة" />
+        <item
             android:id="@+id/settings"
             android:title="الإعدادات" />
         <item
